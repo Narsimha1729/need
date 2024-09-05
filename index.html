@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comply: In-Depth Need-Want-Demand Analysis</title>
+    <link rel="stylesheet" href="need.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Comply: In-Depth Need-Want-Demand Analysis</h1>
+    </header>
+    
+    <main>
+        <section id="need-analysis">
+            <h2>Need Analysis</h2>
+            <p>Why Pharma Companies Need Regulatory Documentation Software</p>
+            <ul id="need-list"></ul>
+            <div class="chart-container">
+                <canvas id="needChart"></canvas>
+            </div>
+            <button class="report-button" onclick="showReport('need')">Show Detailed Need Report</button>
+        </section>
+        
+        <section id="want-analysis">
+            <h2>Want Analysis</h2>
+            <p>Why Pharma Companies Want Documentation Software</p>
+            <ul id="want-list"></ul>
+            <div class="chart-container">
+                <canvas id="wantChart"></canvas>
+            </div>
+            <button class="report-button" onclick="showReport('want')">Show Detailed Want Report</button>
+        </section>
+        
+        <section id="demand-analysis">
+            <h2>Demand Analysis</h2>
+            <p>Why There's Demand for GenAI-Enabled Software Like Comply</p>
+            <ul id="demand-list"></ul>
+            <div class="chart-container">
+                <canvas id="demandChart"></canvas>
+            </div>
+            <button class="report-button" onclick="showReport('demand')">Show Detailed Demand Report</button>
+        </section>
+    </main>
+    
+    <div id="report-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeReport()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <div id="popup-content"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Comply Analysis. All rights reserved.</p>
+    </footer>
+
+    <script src="need.js"></script>
+</body>
+</html>
